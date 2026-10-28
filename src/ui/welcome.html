@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https: http:; style-src 'self'; script-src 'self'">
+  <title>Bem-vindo</title>
+  <link rel="stylesheet" href="../pages/pages.css">
+</head>
+<body>
+  <main class="page">
+    <img class="page-logo" src="../assets/devoid-web-white.png" alt="Devoid Web">
+    <h1 data-t>Bem-vindo ao Devoid Web</h1>
+    <p class="lead" data-t>Um navegador rápido, leve e focado na sua privacidade.</p>
+    <div class="langs" id="langs" role="group" aria-label="Idioma"></div>
+
+    <div class="notice warn">
+      <b data-t>Em fase ativa de desenvolvimento</b>
+      <span data-t>O Devoid Web ainda está sendo construído. Você pode encontrar erros e recursos em ajuste. Obrigado por testar.</span>
+    </div>
+    <div class="notice">
+      <b data-t>Privacidade em primeiro lugar</b>
+      <span data-t>O Devoid Web NÃO possui preenchimento automático (nada de dados de formulários ou senhas guardados) e NÃO grava as teclas digitadas. Nada do que você digita é armazenado, rastreado ou enviado.</span>
+    </div>
+
+    <h2 data-t>Guia rápido</h2>
+    <div class="tiles">
+      <div class="tile"><b data-t>Personalização</b><small data-t>Menu ☰ › Configurações › Aparência: temas, cor de destaque, estilo das abas e fonte.</small></div>
+      <div class="tile"><b data-t>Bloqueador de anúncios</b><small data-t>O escudo na barra de endereços mostra quantos anúncios e rastreadores foram bloqueados e permite desativar o bloqueio em um site.</small></div>
+      <div class="tile"><b data-t>Informações do site</b><small data-t>Clique no cadeado para ver o certificado e ajustar câmera, microfone, localização e outras permissões do site.</small></div>
+      <div class="tile"><b data-t>Menu e configurações</b><small data-t>O menu ☰, no canto superior direito, reúne histórico, downloads, favoritos, extensões, contas e configurações.</small></div>
+    </div>
+
+    <div class="cta">
+      <button id="start" class="btn primary" data-t>Começar a navegar</button>
+      <button id="settings" class="btn" data-t>Abrir configurações</button>
+    </div>
+  </main>
+  <script src="i18n.js"></script>
+  <script src="theme.js"></script>
+  <script src="welcome.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src file: data: http: https:; media-src file:; style-src 'self'; script-src 'self'">
+  <title>Devoid Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="strip"></div>
+
+  <header id="tabs">
+    <button id="tl" class="ib sm" title="Rolar abas para a esquerda" data-tt hidden></button>
+    <div id="tablist" role="tablist"></div>
+    <button id="tr" class="ib sm" title="Rolar abas para a direita" data-tt hidden></button>
+    <button id="newtab" class="ib" title="Nova aba (Ctrl+T)" data-tt></button>
+    <span id="badge" hidden></span>
+  </header>
+
+  <nav id="bar">
+    <button id="back" class="ib" title="Voltar" data-tt disabled></button>
+    <button id="fwd" class="ib" title="Avançar" data-tt disabled></button>
+    <button id="reload" class="ib" title="Recarregar" data-tt></button>
+
+    <div id="omni">
+      <button id="sec" class="sec" title="Informações do site" data-tt></button>
+      <input id="addr" type="text" data-tp placeholder="Pesquisar ou digitar endereço" spellcheck="false" autocomplete="off">
+      <button id="reader" class="ib sm2" title="Modo leitura" data-tt hidden></button>
+      <button id="shield" class="ib sm2" title="Bloqueador de anúncios e rastreadores" data-tt hidden><span id="shieldn"></span></button>
+      <button id="translate" class="ib sm2" title="Traduzir com o Google Tradutor" data-tt hidden></button>
+      <button id="pip" class="ib sm2" title="Picture-in-Picture (Ctrl+Shift+P)" data-tt></button>
+      <button id="star" class="ib sm2" title="Adicionar aos favoritos (Ctrl+D)" data-tt></button>
+    </div>
+
+    <div id="pinned"></div>
+    <button id="dl" class="ib dl" title="Downloads" data-tt hidden><i id="ring"></i></button>
+    <button id="split" class="ib" title="Dividir a tela" data-tt></button>
+    <button id="ext" class="ib" title="Extensões" data-tt></button>
+    <button id="menu" class="ib" title="Menu" data-tt></button>
+  </nav>
+  <div id="progress"></div>
+  <div id="toast" hidden></div>
+  <audio id="player" hidden preload="metadata"></audio>
+
+  <script src="i18n.js"></script>
+  <script src="icons.js"></script>
+  <script src="theme.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>

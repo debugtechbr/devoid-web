@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'">
+  <title>Devoid Web</title>
+  <link rel="stylesheet" href="../pages/pages.css">
+</head>
+<body class="chooser">
+  <main class="page">
+    <img class="page-logo" src="../assets/devoid-web-white.png" alt="Devoid Web">
+    <h1 data-t>Quem está navegando?</h1>
+    <p class="lead" data-t>Cada perfil tem cookies, sessão, histórico e favoritos separados.</p>
+
+    <div id="cards" class="pgrid"></div>
+
+    <form id="newform" class="pform" hidden>
+      <input id="pname" type="text" maxlength="30" data-tp placeholder="Nome do perfil" spellcheck="false" autocomplete="off">
+      <div id="colors" class="swatch-row" role="group" aria-label="Cor"></div>
+      <div id="icons" class="icon-row" role="group" aria-label="Ícone"></div>
+      <div class="cta">
+        <button type="submit" class="btn primary" data-t>Criar perfil</button>
+        <button type="button" id="cancel" class="btn" data-t>Cancelar</button>
+      </div>
+    </form>
+
+    <label class="remember"><input id="remember" type="checkbox"><span data-t>Lembrar escolha e iniciar direto neste perfil</span></label>
+  </main>
+  <script src="i18n.js"></script>
+  <script src="icons.js"></script>
+  <script src="theme.js"></script>
+  <script src="profiles.js"></script>
+</body>
+</html>

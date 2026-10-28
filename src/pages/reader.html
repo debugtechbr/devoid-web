@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https: http: data:; style-src 'self'; script-src 'self'">
+  <title>Modo leitura</title>
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body class="reader rt-dark">
+  <header class="rbar" id="bar">
+    <button id="close" class="btn" data-t>Fechar leitura</button>
+    <span id="time" class="rtime"></span>
+    <div class="rgroup" role="group" aria-label="Tamanho do texto">
+      <button id="smaller" class="btn" data-tt title="Diminuir o texto">A−</button>
+      <button id="bigger" class="btn" data-tt title="Aumentar o texto">A+</button>
+    </div>
+    <div class="rgroup" id="themes" role="group" aria-label="Tema de fundo">
+      <button class="btn" data-theme="dark" data-t>Escuro Cyberpunk</button>
+      <button class="btn" data-theme="sepia" data-t>Sépia</button>
+      <button class="btn" data-theme="light" data-t>Branco Leitura</button>
+    </div>
+    <a id="orig" class="btn" data-t>Ver original</a>
+  </header>
+  <article id="article" class="rd"></article>
+  <script src="../ui/i18n.js"></script>
+  <script src="../ui/theme.js"></script>
+  <script src="reader.js"></script>
+</body>
+</html>

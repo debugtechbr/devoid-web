@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' file: data:; style-src 'self'; script-src 'self'">
+  <title>Extensões</title>
+  <link rel="stylesheet" href="../pages/pages.css">
+</head>
+<body>
+  <main class="page">
+    <img class="page-logo" src="../assets/devoid-web-white.png" alt="Devoid Web">
+    <h1 data-t>Extensões</h1>
+    <p class="lead" data-t>Instale, fixe e remova extensões do Chrome.</p>
+
+    <div id="guest" class="notice warn" hidden>
+      <b data-t>Extensões ficam desativadas no perfil Convidado.</b>
+    </div>
+    <div id="blocker" class="notice" hidden>
+      <b data-t>Extensão bloqueadora detectada</b>
+      <span id="blockerNames"></span>
+    </div>
+
+    <h2 data-t>Instaladas</h2>
+    <div id="list"></div>
+
+    <section id="install">
+      <h2 data-t>Instalar</h2>
+      <div class="newprofile">
+        <input id="link" type="text" data-tp placeholder="Link da Chrome Web Store ou ID" spellcheck="false" autocomplete="off">
+        <button id="go" class="btn primary" data-t>Instalar</button>
+      </div>
+      <div class="cta">
+        <button id="file" class="btn" data-t>Arquivo .crx…</button>
+        <button id="folder" class="btn" data-t>Pasta descompactada…</button>
+        <button id="guide" class="btn" data-t>Como instalar extensões</button>
+      </div>
+      <div class="notice">
+        <b data-t>Nem toda extensão funciona</b>
+        <span data-t>O Devoid Web usa o suporte a extensões do Electron. Content scripts e armazenamento costumam funcionar; recursos avançados do Chrome podem funcionar só em parte.</span>
+      </div>
+    </section>
+  </main>
+  <script src="i18n.js"></script>
+  <script src="theme.js"></script>
+  <script src="extensions.js"></script>
+</body>
+</html>

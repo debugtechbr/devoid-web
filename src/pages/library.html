@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: http: data:; style-src 'self'; script-src 'self'">
+  <title>Favoritos</title>
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body class="lib">
+  <header>
+    <img src="../assets/devoid-web-white.png" alt="Devoid Web">
+    <nav>
+      <a href="#fav" data-t>Favoritos</a>
+      <a href="#hist" data-t>Histórico</a>
+      <a href="#dl" data-t>Downloads</a>
+    </nav>
+    <button id="clear" hidden>Limpar</button>
+  </header>
+  <ul id="list"></ul>
+  <script src="../ui/i18n.js"></script>
+  <script src="../ui/theme.js"></script>
+  <script src="library.js"></script>
+</body>
+</html>

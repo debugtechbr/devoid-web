@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https: http:; style-src 'self'; script-src 'self'">
+  <title>Contas e perfis</title>
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+  <main class="page">
+    <img class="page-logo" src="../assets/devoid-web-white.png" alt="Devoid Web">
+    <h1 data-t>Contas e perfis</h1>
+    <p class="lead" data-t>Entre nas suas contas e alterne entre elas com um clique. Cada perfil guarda cookies e sessão separados dos outros.</p>
+
+    <div class="notice warn">
+      <b data-t>Sobre entrar com Google, Microsoft e outros</b>
+      <span data-t>Alguns serviços, principalmente o Google, podem recusar o login em navegadores novos. Se acontecer, tente de novo pelo perfil ou use um app oficial.</span>
+    </div>
+
+    <label class="remember"><input id="startdirect" type="checkbox"><span data-t>Iniciar direto no perfil desta janela, sem perguntar</span></label>
+
+    <h2 data-t>Seus perfis</h2>
+    <div id="profiles"></div>
+    <div class="newprofile">
+      <input id="pname" type="text" maxlength="30" data-tp placeholder="Nome do novo perfil" spellcheck="false" autocomplete="off">
+      <input id="pcolor" type="color" value="#4cc9f0">
+      <button id="pcreate" class="btn primary" data-t>Criar perfil</button>
+    </div>
+    <div id="pmsg" class="msg"></div>
+
+    <h2 data-t>Entrar em um serviço</h2>
+    <p data-t>Escolha o perfil e o serviço. O login abre em uma janela daquele perfil.</p>
+    <div class="newprofile"><select id="target" aria-label="Perfil"></select></div>
+    <div id="services" class="svc"></div>
+  </main>
+  <script src="../ui/i18n.js"></script>
+  <script src="../ui/theme.js"></script>
+  <script src="accounts.js"></script>
+</body>
+</html>

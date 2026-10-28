@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https: http:; style-src 'self'; script-src 'self'">
+  <title>Extensões</title>
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+  <main class="page">
+    <img class="page-logo" src="../assets/devoid-web-white.png" alt="Devoid Web">
+    <div id="banner" class="notice warn" hidden>
+      <b data-t>Você está instalando uma nova extensão no Devoid Web</b>
+      <span data-t>Confira as permissões na janela de confirmação. Instale apenas extensões de desenvolvedores em que você confia.</span>
+    </div>
+    <h1 data-t>Como instalar extensões</h1>
+    <p class="lead" data-t>Siga os passos abaixo para buscar, baixar e ativar extensões da Chrome Web Store.</p>
+
+    <ol class="steps" id="steps">
+      <li data-step="1">
+        <b data-t>Busque a extensão</b>
+        <span data-t>Abra a Chrome Web Store e procure pelo nome (por exemplo, "uBlock Origin" ou "Dark Reader").</span>
+        <div class="act"><button class="btn primary" id="openStore" data-t>Abrir a Chrome Web Store</button></div>
+      </li>
+      <li data-step="2">
+        <b data-t>Copie o link da extensão</b>
+        <span data-t>Na página da extensão, copie o endereço da barra de endereços. O link termina com o ID da extensão (32 letras).</span>
+        <div class="act"><button class="btn" id="copied" data-t>Já copiei o link</button></div>
+      </li>
+      <li data-step="3">
+        <b data-t>Cole o link e instale</b>
+        <span data-t>O Devoid Web baixa a extensão, mostra as permissões e pede a sua confirmação.</span>
+        <div class="act">
+          <input id="link" type="text" data-tp placeholder="https://chromewebstore.google.com/detail/…" spellcheck="false" autocomplete="off">
+          <button class="btn primary" id="install" data-t>Instalar</button>
+        </div>
+      </li>
+      <li data-step="4">
+        <b data-t>Ative e fixe na barra</b>
+        <span data-t>Clique no ícone de quebra-cabeça da barra, escolha a extensão e use o alfinete para fixá-la ao lado da barra de endereços.</span>
+        <div class="act"><button class="btn" id="seeExt" data-t>Ver minhas extensões</button></div>
+      </li>
+    </ol>
+
+    <h2 data-t>Outras formas de instalar</h2>
+    <div class="tiles">
+      <div class="tile"><b data-t>Arquivo .crx ou .zip</b><small data-t>Use o botão "Arquivo .crx…" no painel de extensões. Arquivos .crx baixados pelo navegador também são instalados.</small></div>
+      <div class="tile"><b data-t>Pasta descompactada</b><small data-t>Para extensões em desenvolvimento, escolha a pasta que contém o manifest.json.</small></div>
+    </div>
+
+    <div class="notice"><b data-t>Nem toda extensão funciona</b>
+      <span data-t>O Devoid Web usa o suporte a extensões do Electron. Content scripts e armazenamento costumam funcionar; recursos avançados do Chrome podem funcionar só em parte.</span></div>
+    <div id="msg" class="msg"></div>
+  </main>
+  <script src="../ui/i18n.js"></script>
+  <script src="../ui/theme.js"></script>
+  <script src="extension-guide.js"></script>
+</body>
+</html>
